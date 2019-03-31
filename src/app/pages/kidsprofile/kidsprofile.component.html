@@ -1,0 +1,315 @@
+<div class="row">
+    <div class="col-md-12">
+      <nb-card class="inline-form-card">
+        <nb-card-header>Kid Details</nb-card-header>
+        <nb-card-body>
+          <form >
+        
+                <div class="form-group row full-name-inputs">
+                    <div class="form-group col-sm-6 input-group">
+                      <input type="text" class="form-control" nbInput fullWidth placeholder="First Name">
+                    </div>
+                    <div class="form-group col-sm-6 input-group">
+                      <input type="text" class="form-control" nbInput fullWidth placeholder="Last Name">
+                    </div>
+                  </div>
+        
+                  <div class="form-group row full-name-inputs">
+                      <div class="form-group col-sm-6 input-group">
+                        <input type="text" class="form-control" nbInput fullWidth placeholder="First Name">
+                      </div>
+                      <div class="form-group col-sm-6 input-group">
+                        <input type="text" class="form-control" nbInput fullWidth placeholder="Last Name">
+                      </div>
+                      <div class="form-group col-sm-6 input-group">
+                          <input type="text" class="form-control" nbInput fullWidth placeholder="Relationship to kid">
+                        </div>
+                        <div class="form-group col-sm-6 input-group">
+                          <input type="text" class="form-control" nbInput fullWidth placeholder="Grade">
+                        </div>
+                        <div class="form-group col-sm-6 input-group">
+                            <input type="text" class="form-control" nbInput fullWidth placeholder="School Name">
+                          </div>
+                          <div class="form-group col-sm-6 input-group">
+                            <input type="text" class="form-control" nbInput fullWidth placeholder="School Address">
+                          </div>
+                          <div class="form-group col-sm-6 input-group">
+                              <input type="text" class="form-control" nbInput fullWidth placeholder="School Teacher Name">
+                            </div>
+                            <div class="form-group col-sm-6 input-group">
+                              <input type="text" class="form-control" nbInput fullWidth placeholder="Any issues we need to know ?">
+                            </div>
+                    </div>
+
+                              <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Any info you like to share ?">
+                                </div>
+
+            <button type="submit" nbButton shape="semi-round" status="danger" class="btn btn-primary">Save Kid Information</button>
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+  
+
+<div class="row">
+    <div class="col-md-6">
+        <nb-card>
+          <nb-card-header>Morning Rides</nb-card-header>
+          <nb-card-body>
+            <form>
+                <div class="form-group row full-name-inputs">
+                    <div class="form-group col-sm-6 input-group">
+                        <input nbInput
+                        placeholder="Starting Date"
+                        [nbDatepicker]="formpicker">
+                 <nb-datepicker #formpicker></nb-datepicker>
+                </div>
+                    <div class="form-group col-sm-6 input-group">
+                        <input nbInput
+               placeholder="Ending Date"
+               [nbDatepicker]="formpicker1">
+        <nb-datepicker #formpicker1></nb-datepicker>
+       </div>
+                  </div>
+               
+
+                  <div class="form-group row full-name-inputs">
+                      <div class="form-group col-sm-6 input-group">
+                          <nb-checkbox class="col-sm-2" status="success">Monday</nb-checkbox>
+                        </div>
+                      <div class="form-group col-sm-6 input-group">
+                          <div class="form-group">
+                              <select class="form-control">
+                                <option>7:30 AM</option>
+                                <option>8:00 AM</option>
+                                <option>8:30 AM</option>
+                                <option>09:00 AM</option>
+                              </select>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="form-group row full-name-inputs">
+                        <div class="form-group col-sm-6 input-group">
+                            <nb-checkbox class="col-sm-2" status="success">Tuesday</nb-checkbox>
+                          </div>
+                        <div class="form-group col-sm-6 input-group">
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>7:30 AM</option>
+                                    <option>8:00 AM</option>
+                                    <option>8:30 AM</option>
+                                    <option>09:00 AM</option>
+                                </select>
+                              </div>
+                              </div>
+                      </div>
+                      <div class="form-group row full-name-inputs">
+                          <div class="form-group col-sm-6 input-group">
+                              <nb-checkbox class="col-sm-2" status="success">Wednesday</nb-checkbox>
+                            </div>
+                          <div class="form-group col-sm-6 input-group">
+                              <div class="form-group">
+                                  <select class="form-control">
+                                      <option>7:30 AM</option>
+                                      <option>8:00 AM</option>
+                                      <option>8:30 AM</option>
+                                      <option>09:00 AM</option>
+                                  </select>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="form-group row full-name-inputs">
+                            <div class="form-group col-sm-6 input-group">
+                                <nb-checkbox class="col-sm-2" status="success">Thursday</nb-checkbox>
+                              </div>
+                            <div class="form-group col-sm-6 input-group">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>7:30 PM</option>
+                                        <option>8:00 PM</option>
+                                        <option>8:30 PM</option>
+                                        <option>09:00 PM</option>
+                                    </select>
+                                  </div>
+                                  </div>
+                          </div>
+                          <div class="form-group row full-name-inputs">
+                              <div class="form-group col-sm-6 input-group">
+                                  <nb-checkbox class="col-sm-2" status="success">Friday</nb-checkbox>
+                                </div>
+                              <div class="form-group col-sm-6 input-group">
+                                  <div class="form-group">
+                                      <select class="form-control">
+                                          <option>7:30 PM</option>
+                                          <option>8:00 PM</option>
+                                          <option>8:30 PM</option>
+                                          <option>09:00 PM</option>
+                                      </select>
+                                    </div>
+                                    </div>
+                            </div>
+              <button type="submit" nbButton shape="semi-round" status="danger" class="btn-demo">Save Morning Ride Information</button>
+    
+            </form>
+          </nb-card-body>
+        </nb-card>
+    
+        
+      </div>
+  
+    <div class="col-md-6">
+      <nb-card>
+        <nb-card-header>Evening Rides</nb-card-header>
+        <nb-card-body>
+          <form>
+              <div class="form-group">
+                  <div class="form-group row full-name-inputs">
+                      <div class="form-group col-sm-6 input-group">
+                          <input nbInput
+                          placeholder="Starting Date"
+                          [nbDatepicker]="formpicker">
+                   <nb-datepicker #formpicker></nb-datepicker>
+                  </div>
+                      <div class="form-group col-sm-6 input-group">
+                          <input nbInput
+                 placeholder="Ending Date"
+                 [nbDatepicker]="formpicker1">
+          <nb-datepicker #formpicker1></nb-datepicker>
+         </div>
+                    </div>
+                </div>
+
+                <div class="form-group row full-name-inputs">
+                    <div class="form-group col-sm-6 input-group">
+                        <nb-checkbox class="col-sm-2" status="success">Monday</nb-checkbox>
+                      </div>
+                    <div class="form-group col-sm-6 input-group">
+                        <div class="form-group">
+                            <select class="form-control">
+                              <option>7:30 PM</option>
+                              <option>8:00 PM</option>
+                              <option>8:30 PM</option>
+                              <option>09:00 PM</option>
+                            </select>
+                          </div>
+                          </div>
+                  </div>
+                  <div class="form-group row full-name-inputs">
+                      <div class="form-group col-sm-6 input-group">
+                          <nb-checkbox class="col-sm-2" status="success">Tuesday</nb-checkbox>
+                        </div>
+                      <div class="form-group col-sm-6 input-group">
+                          <div class="form-group">
+                              <select class="form-control">
+                                  <option>7:30 PM</option>
+                                  <option>8:00 PM</option>
+                                  <option>8:30 PM</option>
+                                  <option>09:00 PM</option>
+                              </select>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="form-group row full-name-inputs">
+                        <div class="form-group col-sm-6 input-group">
+                            <nb-checkbox class="col-sm-2" status="success">Wednesday</nb-checkbox>
+                          </div>
+                        <div class="form-group col-sm-6 input-group">
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>7:30 PM</option>
+                                    <option>8:00 PM</option>
+                                    <option>8:30 PM</option>
+                                    <option>09:00 PM</option>
+                                </select>
+                              </div>
+                              </div>
+                      </div>
+                      <div class="form-group row full-name-inputs">
+                          <div class="form-group col-sm-6 input-group">
+                              <nb-checkbox class="col-sm-2" status="success">Thursday</nb-checkbox>
+                            </div>
+                          <div class="form-group col-sm-6 input-group">
+                              <div class="form-group">
+                                  <select class="form-control">
+                                      <option>7:30 PM</option>
+                                      <option>8:00 PM</option>
+                                      <option>8:30 PM</option>
+                                      <option>09:00 PM</option>
+                                  </select>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="form-group row full-name-inputs">
+                            <div class="form-group col-sm-6 input-group">
+                                <nb-checkbox class="col-sm-2" status="success">Friday</nb-checkbox>
+                              </div>
+                            <div class="form-group col-sm-6 input-group">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>7:30 PM</option>
+                                        <option>8:00 PM</option>
+                                        <option>8:30 PM</option>
+                                        <option>09:00 PM</option>
+                                    </select>
+                                  </div>
+                                  </div>
+                          </div>
+            <button type="submit" nbButton shape="semi-round" status="danger" class="btn-demo">Save Evening Ride Information</button>
+  
+          </form>
+        </nb-card-body>
+      </nb-card>
+  
+      
+    </div>
+  </div>
+  
+  
+  <!-- 
+  
+  <div class="row">
+    <div class="col-xxxl-3 col-md-6" *ngFor="let statusCard of statusCards">
+      <ngx-status-card [title]="statusCard.title"
+                       [type]="statusCard.type">
+        <i [ngClass]="statusCard.iconClass"></i>
+      </ngx-status-card>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xxxl-3 col-xxl-4 col-lg-5 col-md-6">
+      <ngx-temperature></ngx-temperature>
+    </div>
+  
+    <div class="col-xxxl-9 col-xxl-8 col-lg-7 col-md-6">
+      <ngx-electricity></ngx-electricity>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xxxl-9 col-xl-12">
+      <ngx-rooms></ngx-rooms>
+    </div>
+  
+    <div class="col-xxxl-3 col-xxl-4 col-lg-7 col-md-6">
+      <ngx-contacts></ngx-contacts>
+    </div>
+  
+    <div class="col-xxxl-3 col-xxl-4 col-lg-5 col-md-6">
+      <ngx-solar [chartValue]="solarValue"></ngx-solar>
+  
+      <ngx-kitten></ngx-kitten>
+    </div>
+  
+    <div class="col-xxxl-3 col-xxl-4 col-md-5">
+      <ngx-traffic></ngx-traffic>
+      <ngx-weather></ngx-weather>
+    </div>
+  
+    <div class="col-xxxl-6 col-xxl-12 col-md-7">
+      <ngx-security-cameras></ngx-security-cameras>
+    </div>
+  </div>
+  -->

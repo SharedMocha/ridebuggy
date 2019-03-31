@@ -1,0 +1,56 @@
+<div>
+    <nb-card size="medium">
+      <nb-card-body>
+        <nb-stepper orientation="horizontal">
+          <nb-step label="First step">
+            <h3>Create parent profile</h3>
+            <p class="lorem">
+              Welcome to Ride Buggy! We are happy you are here.<br>
+              Let us help you in setting your profile.<br>
+              Click below create button to get started. After you complete your profile you can come back and click next button.<br><br>
+              <button type="submit" nbButton shape="semi-round" status="warning" class="btn-demo">Create Parent Profile</button>
+
+            </p>
+
+            <button nbButton disabled nbStepperNext>prev</button>
+            <button nbButton nbStepperNext>next</button>
+          </nb-step>
+          <nb-step label="Second step">
+            <h3>Create your kids profile</h3>
+            <p class="lorem">
+              Now, lets create your kids profile and plan their rides.<br>
+              You can add all you kids information and select morning or evening rides accordingly.<br>
+              Click below create button to get started. After you complete your kids profile you can come back and click next button<br><br>
+              <button type="submit" nbButton shape="semi-round" status="warning" class="btn-demo">Create Kids Profile</button>
+
+            </p>
+            
+            <button nbButton nbStepperPrevious>prev</button>
+            <button nbButton nbStepperNext>next</button>
+          </nb-step>
+          <nb-step label="Third step">
+            <h3>View scheduled rides</h3>
+            <p class="lorem">
+                Congratulations! You just completed your profile and your kids profile.<br>
+              Now lets see the rides created for your kids. <br><br>
+              <button type="submit" nbButton shape="semi-round" status="warning" class="btn-demo">View created rides</button>
+            </p>
+            <button nbButton nbStepperPrevious>prev</button>
+            <button nbButton nbStepperNext>next</button>
+          </nb-step>
+          <nb-step label="Fourth step">
+            <h3>Add new ride or Modify existing ride</h3>
+            <p class="lorem">
+              You completed your setup.<br>
+              Feel feel to modify existing rides by cliking them from 'Planned Rides' section on the left.<br>
+              You can create a new ride anytime by clicking below create button.<br><br>
+              <button type="submit" nbButton shape="semi-round" status="warning" class="btn-demo">Create New Ride</button>
+
+            </p>
+            <button nbButton nbStepperPrevious>prev</button>
+            <button nbButton disabled nbStepperNext>next</button>
+          </nb-step>
+        </nb-stepper>
+      </nb-card-body>
+    </nb-card>
+  </div>

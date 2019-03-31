@@ -1,0 +1,15 @@
+<nb-card-body>
+  <ul class="traffic-list">
+    <li *ngFor="let item of frontCardData; trackBy: trackByDate">
+      <div class="value">{{  item.rideStartingDateTime | date}}</div>
+      <div class="date">{{ item.rideStartingDateTime  | date:'shortTime'}}</div>
+      <div class="value">{{ item.kidName  | titlecase}}</div>
+      <div>
+        <button (click)="onClick()" nbButton shape="semi-round" status="warning" >Modify</button>
+      
+      
+      </div>
+      
+    </li>
+  </ul>
+</nb-card-body>

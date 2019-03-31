@@ -1,0 +1,8 @@
+<nb-reveal-card>
+  <nb-card-front>
+    <nb-card size="large">
+      <ngx-traffic-cards-header [type]="period" (periodChange)="setPeriodAngGetData($event)"></ngx-traffic-cards-header>
+      <ngx-traffic-front-card [frontCardData]="rides"></ngx-traffic-front-card>
+      </nb-card>
+  </nb-card-front>
+</nb-reveal-card>
