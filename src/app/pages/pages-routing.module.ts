@@ -20,7 +20,7 @@ const routes: Routes = [{
     component: HowitworksComponent,
   }, {
     path: 'dashboard',
-    component: ECommerceComponent,
+    component: HowitworksComponent,
   }, {
     path: 'parentprofile',
     component: DashboardComponent,

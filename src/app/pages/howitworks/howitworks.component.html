@@ -1,56 +1,264 @@
 <div>
-    <nb-card size="medium">
+    
       <nb-card-body>
         <nb-stepper orientation="horizontal">
           <nb-step label="First step">
-            <h3>Create parent profile</h3>
+            <h3>Provide information</h3>
             <p class="lorem">
-              Welcome to Ride Buggy! We are happy you are here.<br>
-              Let us help you in setting your profile.<br>
-              Click below create button to get started. After you complete your profile you can come back and click next button.<br><br>
-              <button type="submit" nbButton shape="semi-round" status="warning" class="btn-demo">Create Parent Profile</button>
+              Welcome to Cook Desk! Let's get you started on your journey of selling home made food from your home.<br>
+              As a first time can you please provide below details ?  You can always come back at a later time to complete if needed. When done click next button.<br><br>
 
             </p>
+
+
+<div class="row">
+    <div class="col-md-6">
+      <nb-card>
+        <nb-card-header>  Personal Details </nb-card-header>
+        <nb-card-body>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" required placeholder="Mobile Number">
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" placeholder="Home Address">
+            </div>
+
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  
+    <div class="col-md-6">
+        <nb-card>
+            <nb-card-header>  Cuisine Details </nb-card-header>
+            <nb-card-body>
+              <form>
+                        <nb-select multiple placeholder="Select cusines you want to cook">
+                          <nb-option value="1">American</nb-option>
+                          <nb-option value="2">Indian</nb-option>
+                          <nb-option value="3">Mediterranean</nb-option>
+                        </nb-select>
+
+                        <nb-select multiple placeholder="Referred From or by?">
+                            <nb-option value="1">Facebook</nb-option>
+                            <nb-option value="2">Instagram</nb-option>
+                            <nb-option value="3">Friend</nb-option>
+                          </nb-select>
+
+                          <nb-select placeholder="Do you sell food today?" [(selected)]="selectedItem">
+                              <nb-select-label>
+                                Selected: {{ selectedItem }}
+                              </nb-select-label>
+                    
+                              <nb-option value="Yes">Yes</nb-option>
+                              <nb-option value="No">No</nb-option>
+                            </nb-select>
+
+                                <nb-select placeholder="Do you agree with our terms and conditions?" [(selected)]="selectedItem">
+                                  <nb-select-label>
+                                    Selected: {{ selectedItem }}
+                                  </nb-select-label>
+                        
+                                  <nb-option value="Yes">Yes</nb-option>
+                                  <nb-option value="No">No</nb-option>
+                                </nb-select>
+                        
+                </form>
+            </nb-card-body>
+          </nb-card>
+    </div>
+  </div>
 
             <button nbButton disabled nbStepperNext>prev</button>
             <button nbButton nbStepperNext>next</button>
           </nb-step>
           <nb-step label="Second step">
-            <h3>Create your kids profile</h3>
+            <h3>Complete phone call</h3>
             <p class="lorem">
-              Now, lets create your kids profile and plan their rides.<br>
-              You can add all you kids information and select morning or evening rides accordingly.<br>
-              Click below create button to get started. After you complete your kids profile you can come back and click next button<br><br>
-              <button type="submit" nbButton shape="semi-round" status="warning" class="btn-demo">Create Kids Profile</button>
+              Now, let's get you connected with our onboarding specialists.<br>
+              Can you pick a time that works for you? One of our team members will give you a call to discuss on next steps and provide 
+              guidance as needed.<br>
 
             </p>
-            
+            <div class="row">
+                <div class="col-md-6">
+                    <nb-card>
+                      <nb-card-header>Pick a day that work for you</nb-card-header>
+                      <nb-card-body>
+                        <form>
+                          
+                            <div class="form-group">
+                                    <input class="form-control" nbInput
+                                placeholder="Pick a date"
+                                [nbDatepicker]="formpicker">
+                         <nb-datepicker #formpicker></nb-datepicker>
+                                                      </div>
+                  
+                              <div class="form-group">
+                                      <select class="form-control" >
+                                          <option>Pick a time</option>
+                                          <option>7:30 PM</option>
+                                          <option>8:00 PM</option>
+                                          <option>8:30 PM</option>
+                                          <option>09:00 PM</option>
+                                      </select>
+                              </div>
+                              
+               
+                        </form>
+                      </nb-card-body>
+                    </nb-card>
+                
+                    
+                  </div>
+              
+                <div class="col-md-6">
+                  <nb-card>
+                    <nb-card-header>Information regarding phone call</nb-card-header>
+                    <nb-card-body>
+    
+                          <div class="form-group">
+                             
+                                  <nb-alert status="primary">Casual call to know more about you and your interests</nb-alert>
+                                  <nb-alert status="primary">Share food items you love to cook and any questions you have for us</nb-alert>
+                            </div>
+                    </nb-card-body>
+                  </nb-card>
+    
+                </div>
+              </div>
+              
             <button nbButton nbStepperPrevious>prev</button>
             <button nbButton nbStepperNext>next</button>
           </nb-step>
           <nb-step label="Third step">
-            <h3>View scheduled rides</h3>
+            <h3>Obtain needed certifications</h3>
             <p class="lorem">
-                Congratulations! You just completed your profile and your kids profile.<br>
-              Now lets see the rides created for your kids. <br><br>
-              <button type="submit" nbButton shape="semi-round" status="warning" class="btn-demo">View created rides</button>
+              Congratulations! You just completed your profile and phone call with our team.<br>
+              In this step we will guide you on how to obtain permits or certifications that help you get started with your business.<br>
+              <br><br>
+
             </p>
+            <div class="row">
+                <div class="col-md-6">
+                  <nb-card>
+                    <nb-card-header>  Training 1 </nb-card-header>
+                    <nb-card-body>
+                      <form>
+                        <div class="form-group">
+                            <nb-alert outline="primary">Name: Food handler course</nb-alert>
+                          </div>
+                        <div class="form-group">
+                            <nb-alert outline="primary">Due Date: 05/30/2017</nb-alert>
+                        </div>
+                        <div class="form-group">
+                            <nb-alert status="warning">Upload Certificate</nb-alert>
+                        </div>
+                        
+                      </form>
+                    </nb-card-body>
+                  </nb-card>
+                </div>
+              
+                <div class="col-md-6">
+                    <nb-card>
+                        <nb-card-header>  Training 2</nb-card-header>
+                        <nb-card-body>
+                          <form>
+                             
+                              <form>
+                                  <div class="form-group">
+                                      <nb-alert outline="primary">Name: Food manager course</nb-alert>
+                                    </div>
+                                  <div class="form-group">
+                                      <nb-alert outline="primary">Due Date: 05/30/2017</nb-alert>
+                                  </div>
+                                  <div class="form-group">
+                                      <nb-alert status="warning">Upload Certificate</nb-alert>
+                                  </div>
+                      
+                               
+                      
+                                </form>
+            
+                          </form>
+                        </nb-card-body>
+                      </nb-card>
+                </div>
+              </div>
+            <div>
+
+  
+              </div>
             <button nbButton nbStepperPrevious>prev</button>
             <button nbButton nbStepperNext>next</button>
           </nb-step>
           <nb-step label="Fourth step">
-            <h3>Add new ride or Modify existing ride</h3>
+            <h3>Complete kitchen inspection</h3>
             <p class="lorem">
-              You completed your setup.<br>
-              Feel feel to modify existing rides by cliking them from 'Planned Rides' section on the left.<br>
-              You can create a new ride anytime by clicking below create button.<br><br>
-              <button type="submit" nbButton shape="semi-round" status="warning" class="btn-demo">Create New Ride</button>
+              Great Job! You are almost done with onboarding.<br>
+              In this final step can you pick a time that works for you? One of our team members will come over to your place during this time.
+                        <br><br>
 
             </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <nb-card>
+                      <nb-card-header>Pick a day that work for you</nb-card-header>
+                      <nb-card-body>
+                        <form>
+                          
+                            <div class="form-group">
+                                    <input class="form-control" nbInput
+                                placeholder="Pick a date"
+                                [nbDatepicker]="formpicker">
+                         <nb-datepicker #formpicker></nb-datepicker>
+                                                      </div>
+                  
+                              <div class="form-group">
+                                      <select class="form-control" >
+                                          <option>Pick a time</option>
+                                          <option>7:30 PM</option>
+                                          <option>8:00 PM</option>
+                                          <option>8:30 PM</option>
+                                          <option>09:00 PM</option>
+                                      </select>
+                              </div>
+                              
+               
+                        </form>
+                      </nb-card-body>
+                    </nb-card>
+                
+                    
+                  </div>
+              
+                <div class="col-md-6">
+                  <nb-card>
+                    <nb-card-header>What to expect on the day of kitchen inspection</nb-card-header>
+                    <nb-card-body>
+    
+                          <div class="form-group">
+                             
+                                  <nb-alert status="primary">Prepare 2 dishes that you like to sell</nb-alert>
+                                  <nb-alert status="primary">Have your camera handy for a photo session</nb-alert>
+                            </div>
+                    </nb-card-body>
+                  </nb-card>
+    
+                </div>
+              </div>
             <button nbButton nbStepperPrevious>prev</button>
             <button nbButton disabled nbStepperNext>next</button>
           </nb-step>
         </nb-stepper>
       </nb-card-body>
-    </nb-card>
   </div>

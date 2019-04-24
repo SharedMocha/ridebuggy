@@ -13,10 +13,11 @@ import { LayoutService } from '../../../@core/utils';
 export class HeaderComponent implements OnInit {
 
   @Input() position = 'normal';
+  chat:string;
 
   user: any;
 
-  userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
+  userMenu = [{ title: 'ESPAÑOL' }, { title: 'Italiano' }];
 
   constructor(private sidebarService: NbSidebarService,
               private menuService: NbMenuService,
@@ -26,8 +27,11 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.chat = "Chat";
     this.userService.getUsers()
       .subscribe((users: any) => this.user = users.nick);
+
+
   }
 
   toggleSidebar(): boolean {
